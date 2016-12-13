@@ -24,8 +24,260 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-markdown>
+					## Git, GitHub, and what your lab can gain from open science
+					John Pearson
+					Dec 13, 2016
+				</section>
+				<section data-markdown data-separator-notes="Note:">
+					## This is not one of *those* talks
+
+					Note:
+					- not the reproducibility police
+					- not to tell you what priorities should be
+					- not a git tutorial
+				</section>
+				<section>
+					<section>
+						<p>Also, this is not (really) about</p>
+						<img src=" https://web.duke.edu/mind/level2/faculty/pearson/assets/images/git-ccn/Git-Logo-1788C.png" style="width: 40%; border:none; background-color:rgba(0, 0, 0, 0)">
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<img src=" https://web.duke.edu/mind/level2/faculty/pearson/assets/images/git-ccn/Git-Icon-1788C.png" style="float: left; width: 10%; background-color:rgba(0, 0, 0, 0); border: none">
+						<h2>Git is:</h2>
+						<ul>
+							<li>a version control system</li>
+							<li>distributed, not central</li>
+							<li>developed for the Linux kernel</li>
+							<li>very fast</li>
+						</ul>
+					</section>
+					<section>
+						<img src=" https://web.duke.edu/mind/level2/faculty/pearson/assets/images/git-ccn/Git-Icon-1788C.png" style="float: left; width: 10%; background-color:rgba(0, 0, 0, 0); border: none">
+						<h2>Version control:</h2>
+						<ul>
+							<li>How do we work on the same code at the same time?</li>
+							<li>How do we track/revert changes and fix bugs?</li>
+							<li>How do we handle multiple versions?</li>
+						</ul>
+					</section>
+					<section>
+						<img src=" https://web.duke.edu/mind/level2/faculty/pearson/assets/images/git-ccn/Git-Icon-1788C.png" style="float: left; width: 10%; background-color:rgba(0, 0, 0, 0); border: none">
+						<h2><em>Distributed</em> Version control:</h2>
+						<ul>
+							<li>Everyone has a copy</li>
+							<li>No need for a central "blessed" version</li>
+							<li>No need for internet connection</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>But git has issues</h2>
+						<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/git-ccn/sof_top_qs.png" style="width:60%"/>
+						<aside class="notes">
+							<ul>
+								<li>tricky conceptual model</li>
+								<li>notoriously tough ui</li>
+								<li>mostly command line</li>
+								<li>steep learning curve</li>
+							</ul>
+						</aside>
+					</section>
+					<section data-background-image="https://www.gitkraken.com/img/og-image.jpg">
+					</section>
+				</section>
+				<section>
+					<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/git-ccn/github-logo.png" style="width: 80%; background-color:rgba(255, 255, 255, 1); border: none"/>
+					<a href="https://github.com/">https://github.com/</a>
+					<br>
+					<ul>
+						<li>Cloud-based git service</li>
+						<li>"Social" coding</li>
+						<li>Well-designed user interface</li>
+						<li>Cute mascot</li>
+					</ul>
+					<aside class="notes">
+						Competitors:
+						<ul>
+							<li>BitBucket</li>
+							<li>GitLab</li>
+						</ul>
+						But GH by far the most popular.
+						GH made the process of managing large coding projects and sharing code much less painful.
+					</aside>
+				</section>
+				<section>
+					<section>
+						<h2>The rest of the talk:</h2>
+						<h4>Benefits for you:</h4>
+						<ul>
+							<li>Managing technical debt</li>
+							<li>Reducing bus factor</li>
+							<li>Communicating your science</li>
+						</ul>
+						<br>
+						<br>
+						<h4>+Coda: Benefits for your students</h4>
+					</section>
+					<section data-background-image="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/git-ccn/gh-education.png">
+						<h2 style="background:rgba(0, 0, 0, 0.35); border-radius:5px;box-shadow: 0px 0px 7px #000">One more thing: it's free.</h2>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>I. Technical debt</h2>
+						<p>You wouldn't keep a lab notebook on scraps of paper.</p>
+						<p>Why do it with your code?</p>
+					</section>
+					<section>
+						<a href="https://github.com/pearsonlab" target="_blank">github.com/pearsonlab</a>
+						<br>
+						<a href="https://github.com/pearsonlab/spiketopics" target="_blank">an example repository</a>
+						<br>
+						<a href="https://github.com/nipy/nipype" target="_blank">a larger project</a>
+						<aside class="notes">
+							<p>Main lab page</p>
+							<ul>
+								<li>members</li>
+								<li>repositories</li>
+								<li>activity</li>
+							</ul>
+							<p>An example repo:</p>
+							<ul>
+								<li>README</li>
+								<li>docs</li>
+								<li>analysis</li>
+								<li>file history</li>
+							</ul>
+							<p>NiPype:</p>
+							<ul>
+								<li>issues and PRs</li>
+								<li>releases</li>
+								<li>contributors</li>
+								<li>graphs</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h2>The bottom line:</h2>
+						<ul>
+							<li>Code is in one place</li>
+							<li>You can choose to keep it private</li>
+							<li>You have <em>complete</em> history of project</li>
+							<li><a href="https://jupyter.org">Jupyter</a> notebooks for reproducible analysis</li>
+							<li>Can also release data<a href="https://git-lfs.github.com/">*</a></li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>II. Bus factor</h2>
+						<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/git-ccn/bus_factor.png" alt="">
+						<p>This is a story...</p>
+						<aside class="notes">
+							<p>define bus factor</p>
+						</aside>
+					</section>
+					<section>
+						<p>about a magical grad student...</p>
+						<img src="http://cdn.usborne.com/catalogue/covers/eng/max_covers/2116.jpg" alt="">
+					</section>
+					<section data-background-image="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/git-ccn/lhc.jpg">
+						<p style="background:rgba(0, 0, 0, 0.4); border-radius:5px;box-shadow: 0px 0px 7px #000">
+							Who built this...<br>
+							and then left the lab...
+						</p>
+					</section>
+					<section data-background-image="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/git-ccn/2001space.jpg">
+						<p style="background:rgba(0, 0, 0, 0.4); border-radius:5px;box-shadow: 0px 0px 7px #000">
+							...with this.
+						</p>
+					</section>
+					<section>
+						<h2>The bottom line:</h2>
+						<ul>
+							<li>In my lab, if it's not on GH, it doesn't count</li>
+							<li>This goes double for undergrads</li>
+							<li>And procedures go <a href="https://github.com/pearsonlab/pearsonlab.github.io/wiki" target="_blank">on the wiki</a></li>
+						</ul>
+						<aside class="notes">
+							<p>be sure to show how easy to edit wiki (md)</p>
+						</aside>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>III. Communicating your science</h2>
+					</section>
+					<section>
+						<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/git-ccn/chang_et_al.png" alt="">
+						<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/git-ccn/chang_gh_link.png" alt="">
+						<aside class="notes">
+							<ul>
+								<li>open is the right thing for science</li>
+								<li>open lets people build on your work</li>
+								<li>your code is a product</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<a href="https://guides.github.com/activities/citable-code/">
+							<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/git-ccn/gh_citation.png" alt="">
+						</a>
+					</section>
+					<section>
+						<h2>The long tail</h2>
+						<p>Papers live a long time.</p>
+						<p>Who would be citing you if they could <a href="https://github.com/jmxpearson/rlfit/issues/1" target="_blank">use your work</a>?</p>
+						<aside class="notes">
+							<ul>
+								<li>my lab using Saxe tasks</li>
+								<li>any method with a toolbox</li>
+								<li>any analysis you want to do on your own data</li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+				<section data-background-image="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/git-ccn/gh_pages.png">
+					<a href="https://pearsonlab.github.io" target="_blank" >pearsonlab.github.io</a>
+					<br>
+					<br>
+					<br>
+					<br>
+				</section>
+				<section>
+					<section data-background-image="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/git-ccn/minions.jpg">
+						<h2 style="background:rgba(0, 0, 0, 0.4); border-radius:5px;box-shadow: 0px 0px 7px #000">Coda: For students</h2>
+					</section>
+					<section>
+						<h2>GitHub as resume</h2>
+						<a href="https://github.com/jmxpearson" target="_blank">github.com/jmxpearson</a>
+					</section>
+					<aside class="notes">
+						<ul>
+							<li>what did you build?</li>
+							<li>who cares about it?</li>
+							<li>what did you contribute to?</li>
+							<li>languages, PRs, docs, tests, followers</li>
+							<li>for the software/data science space, this is better than LinkedIn</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h2>Action steps</h2>
+					<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/git-ccn/labtocat.png" style="width:20%; float:left">
+					<ul>
+						<li>Come talk to me</li>
+						<li>Adopt GH on a per-project basis</li>
+						<li>There are lots of ways to <a href="https://git-scm.com/book/en/v2">learn</a> <a href="https://try.github.io/levels/1/challenges/1">git</a> and <a href="https://help.github.com/articles/good-resources-for-learning-git-and-github/">GitHub</a></li>
+					</ul>
+				</section>
 			</div>
 		</div>
 
